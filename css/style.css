@@ -1,0 +1,368 @@
+/*My Top and Middle Section*/
+.nav{
+   font-family: "Poppins", sans-serif;;
+    margin-bottom: 0px;
+}
+
+.nav_top{
+    background-color: rgb(201, 2, 2);
+    color: white;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+} 
+ 
+.nav_top a{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px; 
+    margin-bottom: 0px;
+}
+ 
+.links{
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-weight: 400;
+    color: red;
+    line-height: 40px;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items:center; 
+    margin-left: 90px;
+    list-style: none; 
+}
+
+@media screen and (max-width: 370px) {
+    .link{
+        margin: 2px;
+      font-size:smaller;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .links{
+      margin: 4px;
+      font-size:medium;
+    }
+    .nav_top a{
+        margin-right: 0px;
+    }
+    .nav_middle a{
+        margin-right: 2px;
+    }
+    .link{
+    
+    }
+    .nav_middle a{
+        margin-right: 0px;
+    }
+  }
+
+
+
+.nav_middle{
+    background-color: yellow;
+    color: red;
+    width: 100%;
+    height: 100px;
+    line-height: 90px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+   
+}
+
+.nav_middle a{
+    color: red;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.middle_list{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+    
+}
+.drop_div{
+    position: relative;
+}
+
+.drop{
+    position: absolute;
+    display: none;
+    color: rgb(201, 2, 2);
+    background-color: transparent;
+    left: 43%;
+    
+    
+}
+.drop_div:hover .drop{
+    display: block;
+}
+.drop_items{  
+color:  rgb(201, 2, 2);  
+display: flex;
+flex-direction: column;
+font-family: "Poppins", sans-serif;;
+font-size: 20px;
+font-weight:400;
+line-height: 20px;
+}
+
+
+
+.logo{
+    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 4px;
+    color: white;
+    background-color:#940000;
+}
+/* My freeicon logos start*/
+.call{
+    margin-right: 4px;
+}
+
+.dropdown{
+    margin-left: 4px;
+}
+
+.log{
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    
+}
+/*logo ending*/
+
+.link{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: red;
+   
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    margin:0px; 
+    list-style: none; 
+
+
+}
+
+
+/*My Banner Section*/
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    color: white;
+    font-family: "Poppins", sans-serif;;
+  }
+
+  
+  .gradient-bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(140deg, rgb(187, 1, 1), rgb(255, 255, 255));
+  }
+
+  
+  .banner-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    mix-blend-mode:overlay;
+  }
+
+ 
+  .text1 {
+    position: absolute;
+    top: 5%;
+    left: 3.5%; 
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+
+  .text2 {
+    position: absolute;
+    top: 40%; 
+    left: 15%;
+    color: yellow;
+    font-size: 22px;
+    width: 50%; 
+    line-height: 26px;
+  }
+
+
+  .text3 {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  /* Buttons */
+  .buttons {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+   
+  }
+
+  .buttons .btn1 {
+    background-color: yellow;
+    color: red;
+    border: none;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 75px;
+   
+  }
+
+  .buttons .btn2{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 75px;
+  }
+
+  .buttons .btn1:hover   {
+    background-color: #940000; 
+    color: white;
+    border: 3px solid white;
+  }
+  .buttons .btn2:hover   {
+    background-color: #940000; 
+    color: white;
+    border: 3px solid yellow;
+  }
+
+/*My Blog Section*/
+.blog_pics{
+    width: 235px;
+    height: 150px;
+  }
+
+
+.blog_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+   
+    
+  }
+.blog_container .blog{
+    margin: 5px;
+    padding: 5px;
+  }
+
+.blog_container p{
+    white-space: pre-line;
+  }
+
+.txt1{
+    color: #940000;
+    font-weight: bolder;
+  }
+
+.txt2{
+   font-family:"Poppins", sans-serif; 
+}
+
+.txt3{
+    margin-left: 170px;
+    color: #940000;
+    font-weight: bolder;
+    font-size: xx-large;
+    left: 200px;
+}
+
+.blog button{
+    font-weight: bold;
+    margin: 3px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+.location{
+    background-color: rgb(216, 19, 19);
+    width: 235px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.location .square_container{
+    background-color:#bd2c2c;
+    width: 210px;
+    height: 50px; 
+    padding: 1px;
+    margin: 4px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.location .square{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border: none;
+    
+}
+
+.location .btn3{
+    background-color: yellow;
+    color: red;
+    border: none;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 75px;
+}
+
+.location .br{
+    width: 50px;
+    border: 2px solid yellow;
+}
