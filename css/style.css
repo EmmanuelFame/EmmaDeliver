@@ -553,7 +553,7 @@ line-height: 20px;
   }
 
   @media screen and (max-width: 370px) {
-    .link{
+    .links{
         margin: 2px;
         font-size:smaller;
     }
