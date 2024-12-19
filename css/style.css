@@ -552,6 +552,12 @@ line-height: 20px;
     font-size:larger;
     left: 100px;
 }
+
+.play_cover{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
    .buttons .btn1 {
     background-color: yellow;
     color: red;
