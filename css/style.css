@@ -546,9 +546,30 @@ line-height: 20px;
    }
    
    
-   .btn1,.btn2 {
-    width: 80px;
-}
+   .buttons .btn1 {
+    background-color: yellow;
+    color: red;
+    border: none;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 45px;
+   
+  }
+
+  .buttons .btn2{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 45px;
+  }
 
   }
 
