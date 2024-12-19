@@ -35,73 +35,16 @@
     text-decoration: none;
     justify-content: space-around;
     align-items:center; 
-    margin-left: 90px;
+    
     list-style: none; 
 }
 
-@media screen and (max-width: 370px) {
-    .link{
-        margin: 2px;
-        font-size:smaller;
-    }
-    
+
+
+
+.tog_cover{
+    display: none;
 }
-@media screen and (min-width: 1000px) {
-   
-    .toggle{
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
-    .links{
-      margin: 4px;
-      font-size:medium;
-    }
-    .nav_top a{
-        margin-right: 0px;
-    }
-    .nav_middle a{
-        margin-right: 2px;
-    }
-    .link{
-    
-    }
-    .nav_middle a{
-     
-        margin-right: 0px;
-    }
-    .options{
-       display: none; 
-    }
-    .logo{
-        display: none;
-    }
-    .middle_list{
-        justify-content: space-between;
-
-    }
-    .toggle{
-        display:flex;
-      
-        height: 40px;
-        padding: 3px;
-        margin-right: 7px;
-    }
-    .toggle_options{
-        display: flex;
-        line-height: 40px;
-        flex-direction: column;
-        background-color: yellow;
-        box-shadow: 0 10px 15px -5px grey;
-
-    }
-    
-    
-   
-
-  }
 
 
 
@@ -116,11 +59,7 @@
     padding-bottom: 0px;
    
 }
-.toggle_options{
-    
-    display: none;
-    
-}
+
 
 
 
@@ -146,7 +85,22 @@
         margin-right: 7px;
 }
 .toggle_options{
+    right: 60%;
+    top: 40%;
+    z-index: 2;
+    padding: 3px;
+    display: none;
+    width: max-content;
     position: absolute;
+    line-height: 40px;
+    margin: 10px;
+    border-radius: 3%;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 10px 15px -5px grey;
+}
+.tog_cover{
+
 }
 
 .drop_div{
@@ -211,7 +165,6 @@ line-height: 20px;
     font-size: 20px;
     font-weight: 400;
     color: red;
-   
     text-decoration: none;
     justify-content: space-around;
     align-items: center;
@@ -545,7 +498,65 @@ line-height: 20px;
     height: 150px;
 }
 
+.show{
+    display: flex;
+}
+
+
+
+
+
+
 .jug{
     margin: 30px;
 }
 
+@media screen and (max-width: 1000px) {
+    .links{
+      margin: 4px;
+      font-size:medium;
+    }
+    .nav_top a{
+        margin-right: 0px;
+    }
+    .nav_middle a{
+        margin-right: 2px;
+    }
+   
+    .nav_middle a{
+     
+        margin-right: 0px;
+    }
+    .options{
+       display: none; 
+    }
+    .logo{
+        display: none;
+    }
+    .middle_list{
+        justify-content: space-between;
+
+    } 
+    .tog_cover{
+        display: flex;
+        line-height: 40px;
+    }
+   .text1,.text2,.text3{
+    display: none;
+   }
+   
+   
+   .btn1,.btn2 {
+    width: 80px;
+}
+
+  }
+
+  @media screen and (max-width: 370px) {
+    .link{
+        margin: 2px;
+        font-size:smaller;
+    }
+
+    
+}
