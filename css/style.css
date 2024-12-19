@@ -42,11 +42,19 @@
 @media screen and (max-width: 370px) {
     .link{
         margin: 2px;
-      font-size:smaller;
+        font-size:smaller;
+    }
+    
+}
+@media screen and (min-width: 1000px) {
+   
+    .toggle{
+        display: none;
     }
 }
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1000px) {
     .links{
       margin: 4px;
       font-size:medium;
@@ -61,9 +69,40 @@
     
     }
     .nav_middle a{
+     
         margin-right: 0px;
     }
+    .options{
+       display: none; 
+    }
+    .logo{
+        display: none;
+    }
+    .middle_list{
+        justify-content: space-between;
+
+    }
+    .toggle{
+        display:flex;
+      
+        height: 40px;
+        padding: 3px;
+        margin-right: 7px;
+    }
+    .toggle_options{
+        display: flex;
+        line-height: 40px;
+        flex-direction: column;
+        background-color: yellow;
+        box-shadow: 0 10px 15px -5px grey;
+
+    }
+    
+    
+   
+
   }
+
 
 
 
@@ -77,6 +116,14 @@
     padding-bottom: 0px;
    
 }
+.toggle_options{
+    
+    display: none;
+    
+}
+
+
+
 
 .nav_middle a{
     color: red;
@@ -86,11 +133,22 @@
 
 .middle_list{ 
     display: flex;
+    
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0px;
     
 }
+.toggle{
+    position: relative;
+        padding: 3px;
+        margin-right: 7px;
+}
+.toggle_options{
+    position: absolute;
+}
+
 .drop_div{
     position: relative;
 }
@@ -124,11 +182,13 @@ line-height: 20px;
     position: relative;
     width: 40px;
     height: 40px;
-    margin-top: 20px;
+    
     padding: 4px;
     color: white;
     background-color:#940000;
 }
+
+
 /* My freeicon logos start*/
 .call{
     margin-right: 4px;
@@ -170,7 +230,7 @@ line-height: 20px;
     height: 500px; 
     overflow: hidden;
     color: white;
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
   }
 
   
@@ -366,3 +426,126 @@ line-height: 20px;
     width: 50px;
     border: 2px solid yellow;
 }
+
+/*The video section*/
+.video_section{
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    
+    
+
+
+}
+
+.gradient_background{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #808080, #A58C7C, #E1C792, #F4D888);
+}
+
+
+  
+.video-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    mix-blend-mode:darken;
+  }
+
+.video_section p{
+    top: 5%;
+    left: 20%;
+    position: absolute; 
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    padding: 2%;
+}
+
+.play_cover{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.video_section .play_container{
+    position: relative;
+    background-color: yellow;
+    color: red;
+    display: block;
+    left: 50%;
+    text-align: center;
+    width: 50px;
+    align-items: center;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+.video_section .play{
+    position: relative;
+    top: 35%;
+    left: 7%;
+    
+}
+
+.undervid{
+    position: relative;
+    margin-top: -160px;
+    font-family: "Poppins", sans-serif ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.under1,.under2,.under3{
+    margin: 10px;
+    box-shadow: 0 10px 15px -5px grey;
+}
+ 
+.undervid ul{
+    margin: 0px;
+    padding: 10px;
+}
+ 
+.undervid p{
+    color: red;
+    font-weight: bolder;
+}
+
+.undervid ul li{
+    list-style: none;
+    
+}
+.undervid ul li:before{
+    display:		inline-block;		
+  	width:		0; 		
+  	height:		0; 	
+	border-top:		solid transparent;
+	border-bottom: 	solid transparent;
+	border-left:	        solid yellow;	
+	border-width:	5px;
+	content:		' ';
+	margin-right:	5px;
+    
+}
+.under-image{
+    width: 255px;
+    height: 150px;
+}
+
+.jug{
+    margin: 30px;
+}
+
