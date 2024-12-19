@@ -545,7 +545,13 @@ line-height: 20px;
     display: none;
    }
    
-   
+   .txt3{
+    margin-left: 100px;
+    color: #940000;
+    font-weight: bolder;
+    font-size: xx-large;
+    left: 100px;
+}
    .buttons .btn1 {
     background-color: yellow;
     color: red;
