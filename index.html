@@ -353,5 +353,23 @@
 
 
 <script src="./js/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+<script>
+    function launchConfetti() {
+        confetti({
+            particleCount: 110,
+            spread: 80,
+            origin: {
+                x: Math.random(),
+                y: Math.random() * 0.5,
+            },
+            colors: ['#ff0000', '#00ff00', '#0000ff', '#ff00ff', '#ffff00'],
+        });
+    }
+
+    // Example loop for confetti
+    setInterval(launchConfetti, 4000);
+</script>
 </body>
 </html>
