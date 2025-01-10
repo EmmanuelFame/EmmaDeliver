@@ -1181,7 +1181,7 @@ background-color: rgb(255, 204, 0);
 .drop_div{
     position: relative;
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .inner_list{
