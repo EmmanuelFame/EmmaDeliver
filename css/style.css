@@ -407,6 +407,11 @@ line-height: 20px;
     text-align:left;
     z-index: 1;
   }
+
+  .text_cover div,pre,p{
+    margin-bottom: 20px;
+   
+  }
  
   .text1 {
    
@@ -1133,7 +1138,7 @@ background-color: rgb(255, 204, 0);
     
 
    
-   .text1,.text2,.text3{
+   .text1,.text2,.text3,.bline{
     display: none;
    }
    
@@ -1145,7 +1150,9 @@ background-color: rgb(255, 204, 0);
     font-size:larger;
     left: 100px;
 }
-   
+   .buttons{
+    margin-left: -200px;
+   }
 .service{
     position: relative;
 }
