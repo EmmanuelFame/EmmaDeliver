@@ -4,11 +4,22 @@
     margin-bottom: 0px;
 }
 
+.nav_top_cover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align:left;
+    z-index: 1;
+} 
+
 .nav_top{
     background-color: rgb(201, 2, 2);
     color: white;
     width: 100%;
     height: 40px;
+    position: relative;
     line-height: 40px;
     
 }
@@ -16,8 +27,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content:space-around;
+    
 } 
+.drop_div{
+    position: relative;
+    display: inline-block;
+    margin-right: 200px;
+}
  
 .nav_top a{
     color: white;
@@ -48,14 +65,26 @@
 
 
 
+.nav_middle_cover{
+    position: relative;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align:left;
+    z-index: 1;
+}
+
 
 .nav_middle{
-    background-color: ffcc00;
+    background-color: #ffcc00;
     color: rgb(186, 0, 0);
     width: 100%;
     height: 100px;
     line-height: 90px;
+    font-weight:bolder;
     margin-bottom: 0px;
+  
     padding-bottom: 0px;
    
 }
@@ -72,20 +101,30 @@
 
 .middle_list{ 
     display: flex;
-    
+    padding: 0;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     margin: 0px;
     
 }
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content:space-around;
+}
+.options div{
+    margin-right: 50px;
+}
 .toggle{
     position: relative;
         padding: 3px;
-        margin-right: 7px;
+        margin-right: 2px;
 }
 .toggle_options{
-    right: 60%;
+    right: 10%;
     top: 40%;
     z-index: 2;
     padding: 3px;
@@ -93,7 +132,7 @@
     width: max-content;
     position: absolute;
     line-height: 40px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 3%;
     flex-direction: column;
     background-color: white;
@@ -134,7 +173,7 @@ line-height: 20px;
     position: relative;
     width: 40px;
     height: 40px;
-    
+    margin-top: 25px;
     padding: 4px;
     color: white;
     background-color:rgb(186, 0, 0);
@@ -152,8 +191,8 @@ line-height: 20px;
 
 .log{
     position: absolute;
-    left: 35%;
-    top: 35%;
+    left: 30%;
+    top: 36%;
     
 }
 /*logo ending*/
@@ -166,7 +205,7 @@ line-height: 20px;
     text-decoration: none;
     justify-content: space-around;
     align-items: center;
-    margin:0px; 
+    margin-right: 35px; 
     list-style: none; 
 
 
@@ -202,22 +241,37 @@ line-height: 20px;
     mix-blend-mode:overlay;
   }
 
+  .text_cover{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align:left;
+    z-index: 1;
+  }
  
   .text1 {
-    position: absolute;
-    top: 5%;
-    left: 3.5%; 
+   
     font-size: 36px;
     font-weight: bold;
     line-height: 36px;
   }
+  .bline{
+    background-color: #ffcc00;
+    color: #ffcc00;
+   
+    
+    
+    height: 3px;
+    width: 100px;
+    
+  }
 
 
   .text2 {
-    position: absolute;
-    top: 40%; 
-    left: 15%;
-    color: ffcc00;
+    
+    color: #ffcc00;
     font-size: 22px;
     width: 50%; 
     line-height: 26px;
@@ -225,18 +279,14 @@ line-height: 20px;
 
 
   .text3 {
-    position: absolute;
-    top: 60%;
-    left: 15%;
+    
     font-size: 26px;
     font-weight: bold;
   }
 
   /* Buttons */
   .buttons {
-    position: absolute;
-    top: 80%;
-    left: 15%;
+    
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -244,25 +294,46 @@ line-height: 20px;
   }
 
   .buttons .btn1 {
-    background-color: ffcc00;
+    background-color: #ffcc00;
     color: rgb(186, 0, 0);
     border: none;
     width: 150px;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 7px 10px;
+    font-size: 16px;
     font-weight: bolder;
     cursor: pointer;
     border-radius: 75px;
    
   }
 
+  .snowflake {
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    animation: fall linear infinite;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px) rotate(0); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
   .buttons .btn2{
     background-color: transparent;
     color: white;
     border: 3px solid white;
     width: 150px;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 7px 15px;
+    font-size: 16px;
     font-weight: bolder;
     cursor: pointer;
     border-radius: 75px;
