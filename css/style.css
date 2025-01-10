@@ -82,7 +82,7 @@ body {
 .nav_middle_cover{
     position: relative;
     top: 50%;
-    left: 65%;
+    left: 60%;
     transform: translate(-70%, -50%);
     width: 60%;
     
@@ -111,7 +111,7 @@ body {
 .nav_middle a{
     color: rgb(186, 0, 0);
     text-decoration: none;
-    margin-right: 0.5em;
+    margin-right: 0.6em;
 }
 
 .middle_list{ 
@@ -134,10 +134,12 @@ body {
 }
 
 .options div{
-    margin-right: 2em;
+    margin-right: 2.5em;
 }
 .options_div{
    width: max-content;
+align-items:end;
+
 }
 .toggle{
     position: relative;
@@ -1157,16 +1159,29 @@ background-color: rgb(255, 204, 0);
     position: relative;
 }
 .service #serve{
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     margin: 10px;
     font-family:"Poppins", sans-serif; 
     color: black;
     position: absolute;
     opacity: 0.05;
-    top: -50px;
+    top: -25px;
     left: 100px;
     
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    
+} 
+.drop_div{
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
 }
 
 .inner_list{
