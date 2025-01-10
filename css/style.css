@@ -1187,6 +1187,14 @@ background-color: rgb(255, 204, 0);
 	content:		' ';
 	margin-right:	5px;
 }
+.tracking_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center ;
+    
+
+}
 
 .trac_pic{
     border: 15px solid rgb(255, 204, 0);
