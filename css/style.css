@@ -1221,9 +1221,9 @@ background-color: rgb(255, 204, 0);
 .trac_pic{
     border: 15px solid rgb(255, 204, 0);
     height: 370px;
-    width: 300px;
+    width: 280px;
     margin-top: 45px;
-    margin-left: 45px;
+    margin-left: -130px;
     
     z-index: 10;
     padding: 15px;
@@ -1241,7 +1241,7 @@ background-color: rgb(255, 204, 0);
     height: 370px;
     position: absolute;
     
-    width: 345px;
+    width: 315px;
    
 
     z-index: 20;
@@ -1250,7 +1250,7 @@ background-color: rgb(255, 204, 0);
     height: 370px;
     
     position: absolute;
-    width: 341px;
+    width: 311px;
     object-fit: cover; 
     mix-blend-mode:soft-light;
     
