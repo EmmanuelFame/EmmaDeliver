@@ -1106,7 +1106,9 @@ background-color: rgb(255, 204, 0);
     .nav_middle a{
         margin-right: 2px;
     }
-   
+    .middle_list{
+        justify-content: flex-end;
+    }
     .nav_middle a{
      
         margin-right: 0px;
